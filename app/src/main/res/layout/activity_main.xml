@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etNum1"
+        android:layout_width="459dp"
+        android:layout_height="46dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:hint="Enter Number 1"
+        android:text=""
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/etNum2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:hint="Enter Number 2"
+        android:text=""
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etNum2"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/Colorprimary"
+        android:text="ADD" />
+
+    <Button
+        android:id="@+id/btnSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etNum2"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="100dp"
+        android:background="@color/Colorprimary"
+        android:inputType="number"
+        android:text="SUB" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/btnAdd"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="200dp"
+        android:hint=""
+        android:text="Result    : "
+        android:textAlignment="gravity"
+        android:textColorHighlight="@color/colorathird"
+        android:textColorHint="#000000"
+        android:textColorLink="@color/colorathird"
+        android:textStyle="bold" />
+
+</RelativeLayout>
